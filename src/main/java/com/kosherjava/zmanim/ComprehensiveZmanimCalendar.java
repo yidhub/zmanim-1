@@ -1273,14 +1273,16 @@ public class ComprehensiveZmanimCalendar extends ZmanimCalendar {
 	 * This method returns the latest <em>zman krias shema</em> (time to recite <em>Shema</em> in the morning) based on the opinion
 	 * that the day starts at {@link #getAlos16Point1Degrees() <em>alos</em> 16.1°} and ends at {@link
 	 * #getSeaLevelSunset() sea level sunset}. This is the opinion of the <a href=
-	 * "https://hebrewbooks.org/40357">חידושי וכללות הרז״ה</a> and the <a href="https://hebrewbooks.org/14799">מנורה הטהורה</a> as
-	 * mentioned by Yisrael Vehazmanim <a href="https://hebrewbooks.org/pdfpager.aspx?req=9765&pgnum=81">vol 1, sec. 7, ch. 3 no.
-	 * 16</a>. Three <em>shaos zmaniyos</em> are calculated based on this day and added to {@link #getAlos16Point1Degrees()
-	 * <em>alos</em>} to reach this time. This time is 3 <em>shaos zmaniyos</em> (solar hours) after {@link #getAlos16Point1Degrees()}
-	 * based on the opinion that the day is calculated from a <em>alos</em> 16.1° to {@link #getSeaLevelSunset()}. <b>Note: </b>
-	 * Based on this calculation <em>chatzos</em> will not be at midday and {@link #isUseAstronomicalChatzosForOtherZmanim()} will be
-	 * ignored. Sources for an asymmetrical day-based calculation can be seen in the documentation of
-	 * {@link #getSofZmanShmaAlos16Point1DegreesToTzaisGeonim7Point083Degrees}.
+	 * "https://hebrewbooks.org/40357">חידושי וכללות הרז״ה</a> in <a href="https://hebrewbooks.org/pdfpager.aspx?req=40357&pgnum=71"
+	 * >סימן ב׳ סע״ג וסע״ד</a> and <a href="https://hebrewbooks.org/pdfpager.aspx?req=40357&pgnum=93">סי׳ ז׳ סע״ב</a> and the <a href=
+	 * "https://hebrewbooks.org/14799">מנורה הטהורה</a> as mentioned by <span lang="he">ישראל והזמנים</span> <a href=
+	 * "https://hebrewbooks.org/pdfpager.aspx?req=9765&pgnum=81">ח״א סי׳ ז׳ פ״ג או׳ ט״ז</a>. Also see <a href=
+	 * "https://hebrewbooks.org/pdfpager.aspx?req=67890&pgnum=29">אשר לשלמה, מועד, סי׳ ה׳</a>. Three <em>shaos zmaniyos</em> are calculated
+	 * based on this day and added to {@link #getAlos16Point1Degrees() <em>alos</em>} to reach this time. This time is 3 <em>shaos
+	 * zmaniyos</em> (solar hours) after {@link #getAlos16Point1Degrees()} based on the opinion that the day is calculated from
+	 * <em>alos</em> 16.1° to {@link #getSeaLevelSunset()}. <b>Note: </b> Based on this calculation <em>chatzos</em> will not be at
+	 * midday and {@link #isUseAstronomicalChatzosForOtherZmanim()} will be ignored. Sources for an asymmetrical day-based
+	 * calculation can be seen in the documentation of {@link #getSofZmanShmaAlos16Point1DegreesToTzaisGeonim7Point083Degrees}.
 	 * 
 	 * @return the {@code Instant} of the latest <em>zman krias shema</em> based on this day. If the calculation can't
 	 *         be computed such as northern and southern locations even south of the Arctic Circle and north of the
